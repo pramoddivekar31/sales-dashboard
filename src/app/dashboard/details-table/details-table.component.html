@@ -5,4 +5,9 @@
       <th *ngFor="let headerLabel of columHeaders">{{headerLabel}}</th>
     </tr>
   </thead>
+  <tbody>
+    <tr *ngFor="let sales of salesRepresentativeData">
+      <td *ngFor="let colDef of colDefs">{{sales[colDef]}}</td>
+    </tr>
+  </tbody>
 </table>

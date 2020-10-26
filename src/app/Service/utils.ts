@@ -1,10 +1,10 @@
-export interface ITableData {
+export interface ISalesData {
   id: number,
   salesRep: string,
   date: string,
   client: string,
   contactPerson: string,
-  Title: string,
+  title: string,
   verticle: string,
   meetingLocation: string,
   perposeOfInteraction: string,

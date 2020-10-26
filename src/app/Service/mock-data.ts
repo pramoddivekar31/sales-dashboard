@@ -68,7 +68,7 @@ export const sellReps = [
   }
 ]
 
-export const tableData = [
+export const salesData = [
   {
     id: 0,
     salesRep: 'John Doe',
@@ -100,7 +100,7 @@ export const tableData = [
     date: 'July 20th, 2018',
     client: 'Accenture',
     contactPerson: 'Dew Tilbey',
-    Title: 'C level',
+    title: 'C level',
     verticle: 'Senior Management',
     meetingLocation: 'Face to face',
     perposeOfInteraction: 'Negotiations',
@@ -197,3 +197,7 @@ export const tableData = [
     engagementStatus: 'Needs defined'
   }
 ]
+
+export const colDefs = ['salesRep', 'date', 'client', 'contactPerson', 'title', 'verticle', 'meetingLocation', 'perposeOfInteraction', 'remarks', 'engagementStatus']
+
+export const columHeaders = ['Sales rep', 'Date', 'Client', 'Primary Contact Person', 'Title', 'Vertical', 'Meeting Location', 'Purpose of Interaction', 'Outcome and Remarks', 'Engagement Status']
