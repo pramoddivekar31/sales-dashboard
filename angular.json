@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1, 
+  "version": 1,
   "newProjectRoot": "projects",
   "projects": {
     "sales-dashboard": {
@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "sales-dashboard"
+    }
+  },
+  "defaultProject": "sales-dashboard",
+  "cli": {
+    "analytics": "c56893dd-96e9-42a0-812f-fbef3a3418ec"
+  }
 }
