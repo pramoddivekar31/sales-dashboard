@@ -1,7 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import { DashboardService } from 'src/app/Service/dashboard.service';
-import { ISalesData } from 'src/app/Service/utils';
-import { colDefs, columHeaders } from 'src/app/Service/mock-data';
+import { Component, OnInit,Input } from '@angular/core';
+import { columDefinitions, columHeaders } from 'src/app/Shared/Service/mock-data';
+import { ISalesData, ICustomer } from 'src/app/Shared/Service/utils';
 
 @Component({
   selector: 'app-details-table',
@@ -10,20 +9,14 @@ import { colDefs, columHeaders } from 'src/app/Service/mock-data';
 })
 export class DetailsTableComponent implements OnInit {
 
-  colDefs: string[] = colDefs
+  colDefs: string[] = columDefinitions
   columHeaders: string[] = columHeaders
-  salesRepresentativeData: ISalesData[]
+  @Input() customerDetails: ICustomer[]
 
-  constructor(private dashboardService: DashboardService) { }
+  constructor() { }
 
   ngOnInit(): void {
-    this.getSalesRepresentativeData()
-  }
+    console.log("this.salesData",this.customerDetails)
 
-  getSalesRepresentativeData() {
-    this.dashboardService.getSalesData().subscribe((salesData: ISalesData[]) => {
-      this.salesRepresentativeData = salesData
-    })
-  }
-
+   }
 }

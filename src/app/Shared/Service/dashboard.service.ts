@@ -11,6 +11,6 @@ export class DashboardService {
   constructor() { }
 
   getSalesData() {
-    return of(salesData) as Observable<ISalesData[]>
+    return of(salesData) as Observable<ISalesData>
   }
 }

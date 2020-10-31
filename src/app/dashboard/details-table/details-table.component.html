@@ -1,13 +1,13 @@
-<p>details-table works!</p>
-<table>
+<p class="header-label">Details</p>
+<table class="details-table">
   <thead>
     <tr>
-      <th *ngFor="let headerLabel of columHeaders">{{headerLabel}}</th>
+      <th class="table-header" *ngFor="let headerLabel of columHeaders">{{headerLabel}}</th>
     </tr>
   </thead>
   <tbody>
-    <tr *ngFor="let sales of salesRepresentativeData">
-      <td *ngFor="let colDef of colDefs">{{sales[colDef]}}</td>
+    <tr class="table-row" *ngFor="let sales of customerDetails">
+      <td class="table-data" *ngFor="let colDef of colDefs">{{sales[colDef]}}</td>
     </tr>
   </tbody>
 </table>
