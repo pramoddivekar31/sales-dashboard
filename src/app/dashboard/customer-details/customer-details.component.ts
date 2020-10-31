@@ -3,11 +3,11 @@ import { columDefinitions, columHeaders } from 'src/app/Shared/Service/mock-data
 import { ISalesData, ICustomer } from 'src/app/Shared/Service/utils';
 
 @Component({
-  selector: 'app-details-table',
-  templateUrl: './details-table.component.html',
-  styleUrls: ['./details-table.component.css']
+  selector: 'app-customer-details',
+  templateUrl: './customer-details.component.html',
+  styleUrls: ['./customer-details.component.css']
 })
-export class DetailsTableComponent implements OnInit {
+export class CustomerDetailsComponent implements OnInit {
 
   colDefs: string[] = columDefinitions
   columHeaders: string[] = columHeaders
@@ -15,8 +15,5 @@ export class DetailsTableComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
-    console.log("this.salesData",this.customerDetails)
-
-   }
+  ngOnInit(): void { }
 }
