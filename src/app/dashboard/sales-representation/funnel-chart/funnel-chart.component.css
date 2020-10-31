@@ -1,0 +1,33 @@
+.funnel-img {
+  height: 650px;
+  width: 550px;
+  position: relative;
+}
+
+.text-over-img {
+  position: absolute;
+  text-align: center;
+  left: 13%;
+}
+
+.label-value:nth-child(even) {
+  padding-bottom: 25px !important;
+}
+
+.label {
+  font-size: 18px;
+  color: #ffff;
+  font-weight: 400;
+}
+
+.value {
+  font-size: 48px;
+  color: #ffff;
+  font-weight: 700;
+}
+
+.last-label-value {
+  font-size: 48px;
+  color: #ffff;
+  font-weight: 700;
+}

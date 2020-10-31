@@ -1,0 +1,9 @@
+<div class="funnel-chart">
+  <img src="assets/funnel.png" class="funnel-img" alt="" />
+  <span class="text-over-img">
+    <div *ngFor="let coldDef of columDefs; index as index; last as isLast">
+      <dd [ngClass]="getLabelClass(isLast)">{{ labels[index] }}</dd>
+      <dd [ngClass]="getValueClass(isLast)">{{ chartData[coldDef] }}</dd>
+    </div>
+  </span>
+</div>
