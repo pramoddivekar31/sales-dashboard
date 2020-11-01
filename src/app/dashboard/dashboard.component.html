@@ -1,2 +1,5 @@
-<app-sales-representation [salesDetails]="salesData.salesDetails"></app-sales-representation>
+<div style="display: flex;">
+  <app-sales-representation [salesDetails]="salesData.salesDetails"></app-sales-representation>
+  <app-customer-statistics></app-customer-statistics>
+</div>
 <app-customer-details [customerDetails]="salesData.customerDetails"></app-customer-details>

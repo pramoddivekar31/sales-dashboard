@@ -1,0 +1,29 @@
+.card {
+  height: 150px;
+  width: 250px;
+  background-color: #ffff;
+  padding: 30px;
+  border-radius: 5px;
+  margin-bottom: 40px;
+}
+
+.icon {
+  text-align: left;
+}
+
+.right-allign {
+  text-align: right;
+}
+
+.card-txt {
+  font-size: 18px;
+  font-weight: 500;
+  color: #2c3e50;
+}
+
+.card-value {
+  font-size: 48px;
+  font-weight: 700;
+  color: #2196f3;
+  padding-top: 10px;
+}

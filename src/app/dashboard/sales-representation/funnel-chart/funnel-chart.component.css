@@ -1,6 +1,9 @@
+.funnel-chart{
+  margin-right: 80px;
+}
+
 .funnel-img {
-  height: 650px;
-  width: 550px;
+  height: 710px;
   position: relative;
 }
 

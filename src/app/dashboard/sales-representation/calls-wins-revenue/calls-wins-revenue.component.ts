@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { ISalesDetails } from 'src/app/Shared/Service/utils';
 
 @Component({
   selector: 'app-calls-wins-revenue',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./calls-wins-revenue.component.css']
 })
 export class CallsWinsRevenueComponent implements OnInit {
+
+  @Input() chartData: ISalesDetails;
 
   constructor() { }
 

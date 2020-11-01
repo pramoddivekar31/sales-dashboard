@@ -1,4 +1,13 @@
-<div style="display: flex">
-  <app-funnel-chart [chartData]="salesDetails[0]"></app-funnel-chart>
-  <app-calls-wins-revenue></app-calls-wins-revenue>
+<div class="sales-reps">
+  <div class="sales-reps-dropdown">
+    <select (change)="onSelectionChange($event)">
+      <option>{{dropdownOptions[0]}}</option>
+      <option>{{dropdownOptions[1]}}</option>
+    </select>
+  </div>
+
+  <div style="display: flex">
+    <app-funnel-chart [chartData]="sales"></app-funnel-chart>
+    <app-calls-wins-revenue [chartData]="sales"></app-calls-wins-revenue>
+  </div>
 </div>

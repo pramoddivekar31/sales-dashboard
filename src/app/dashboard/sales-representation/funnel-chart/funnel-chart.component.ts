@@ -15,8 +15,7 @@ export class FunnelChartComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void { }
 
   getLabelClass(isLast) {
     return {

@@ -1,0 +1,24 @@
+.sales-reps {
+  background-color:#EFF3F6;
+}
+
+.sales-reps-dropdown {
+  height: 50px;
+  width: 1050px;
+  background-color:white;
+  border-radius: 5px;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+}
+
+select {
+  border: none;
+  margin-left: 40px;
+  width: 150px;
+  outline: none;
+  font-size: 14px;
+  font-weight: 500;
+  color: #2c3e50;
+  opacity: 0.5;
+}
