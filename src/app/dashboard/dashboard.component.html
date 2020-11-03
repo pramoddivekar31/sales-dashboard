@@ -1,5 +1,21 @@
-<div style="display: flex;">
-  <app-sales-representation [salesDetails]="salesData.salesDetails"></app-sales-representation>
-  <app-customer-statistics></app-customer-statistics>
+<div class="logo-and-company-name">
+  <span>
+    <img src="../../assets/logo.png" alt="">
+  </span>
+  <span class="company-name">
+    SALES DASHBOARD
+  </span>
 </div>
-<app-customer-details [customerDetails]="salesData.customerDetails"></app-customer-details>
+
+<div class="mr-auto">
+  <mat-tab-group>
+    <mat-tab *ngFor="let label of dayWiseData" [label]="label">
+        <div class="sales-reps">
+          <app-sales-representation style="display: inline-block;" [salesDetails]="salesData.salesDetails"></app-sales-representation>
+          <app-customer-statistics style="display: inline-block;" [customerStatistics]="salesData.customerStatistics"></app-customer-statistics>
+        </div>
+    </mat-tab>
+  </mat-tab-group>
+</div>
+
+<app-customer-details [customerDetails]="customerDetails"></app-customer-details>

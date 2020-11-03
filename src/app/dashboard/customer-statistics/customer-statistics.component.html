@@ -1,6 +1,7 @@
-<p>customer-statistics works!</p>
-
-<mat-tab-group>
-  <mat-tab label="First"> Content 1 </mat-tab>
-  <mat-tab label="Second"> Content 2 </mat-tab>
-</mat-tab-group>
+<div class="mr-40">
+  <mat-tab-group mat-stretch-tabs>
+    <mat-tab *ngFor="let statistics of customerStatistics" [label]="statistics.cardLabel">
+      <app-statistic-cards [statistics]="statistics"></app-statistic-cards>
+    </mat-tab>
+  </mat-tab-group>
+</div>

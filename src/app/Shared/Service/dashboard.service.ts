@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { of, Observable } from 'rxjs';
-import { salesData } from './mock-data';
-import { ISalesData } from './utils';
+import { salesData, customerDetails } from './mock-data';
+import { ISalesData, ICustomer } from './utils';
 
 @Injectable({
   providedIn: 'root'
@@ -10,7 +10,11 @@ export class DashboardService {
 
   constructor() { }
 
-  getSalesData() {
-    return of(salesData) as Observable<ISalesData>
+  getSalesData(): Observable<ISalesData> {
+    return of<ISalesData>(salesData)
+  }
+
+  getCustomerDetails(): Observable<ICustomer[]> {
+    return of<ICustomer[]>(customerDetails)
   }
 }

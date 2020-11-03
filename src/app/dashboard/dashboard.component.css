@@ -1,1 +1,29 @@
+.sales-reps {
+  padding: 20px 80px 30px 80px;
+  display: flex;
+  justify-content: center;
+}
 
+::ng-deep .mat-tab-labels {
+  background-color: white;
+}
+
+.logo-and-company-name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 130px;
+  width: 1260px;
+  margin: auto;
+}
+
+.company-name {
+  font-size: 48px;
+  color: #231f20;
+  font-weight: 300;
+}
+
+.mr-auto {
+  width: 1360px;
+  margin: auto;
+}

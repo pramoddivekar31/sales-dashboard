@@ -1,8 +1,6 @@
 export interface ISalesData {
-  dayWiseData : string,
   salesDetails : ISalesDetails[],
   customerStatistics : ICustomerStatistics[],
-  customerDetails: ICustomer[]
 }
 
 export interface ISalesDetails {

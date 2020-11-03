@@ -1,1 +1,17 @@
-<p>statistic-cards works!</p>
+<div *ngFor="let card of statistics.cardStatistics;let i = index">
+  <div [ngClass]="getClass(i)" class="card">
+    <p class="name">{{card.name}}</p>
+    <p class="disp-flex">
+      <span class="desc">New MRR</span>
+      <span class="value">{{card.newMmr}}</span>
+    </p>
+    <p class="disp-flex">
+      <span class="desc">New Logos</span>
+      <span class="value">{{card.newLogos}}</span>
+    </p>
+    <p class="disp-flex">
+      <span class="desc">Demo Calls</span>
+      <span class="value">{{card.demoCalls}}</span>
+    </p>
+  </div>
+</div>

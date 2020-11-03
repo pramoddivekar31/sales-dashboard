@@ -1,20 +1,25 @@
-.funnel-chart{
-  margin-right: 80px;
-}
-
 .funnel-img {
   height: 710px;
+  width:100%;
   position: relative;
 }
 
-.text-over-img {
-  position: absolute;
+.funnel-chart {
+  position: relative;
   text-align: center;
-  left: 13%;
+  height: 710px;
+  width:600px;
+}
+
+.text-over-img {
+  position:absolute;
+  top: 0;
+  width:100%
 }
 
 .label-value:nth-child(even) {
-  padding-bottom: 25px !important;
+  padding-bottom: 30px !important;
+  margin-top: 30px !important;
 }
 
 .label {
@@ -34,3 +39,4 @@
   color: #ffff;
   font-weight: 700;
 }
+

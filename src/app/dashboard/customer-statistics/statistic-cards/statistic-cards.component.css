@@ -1,0 +1,52 @@
+.card {
+  height: 150px;
+  padding: 30px;
+  border-radius: 5px;
+  margin-bottom: 40px;
+  background-image: url('../../../../assets/winner.png');
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.first-card-back-color {
+  background-color: #1976d2;
+}
+
+.second-card-back-color {
+  background-color: #2196f3;
+}
+
+.third-card-back-color {
+  background-color: #64b5f6;
+}
+
+.card:first-child {
+  margin-top: 40px;
+}
+
+.name {
+  font-size: 24px;
+  font-weight: 400;
+  color: white;
+  text-align: center;
+}
+
+.desc {
+  font-size: 18px;
+  font-weight: 400;
+  color: white;
+  text-align: left;
+}
+
+.value {
+  font-size: 48px;
+  font-weight: 700;
+  color: white;
+  text-align: right;
+}
+
+.disp-flex {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}

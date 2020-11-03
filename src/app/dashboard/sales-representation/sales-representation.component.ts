@@ -9,7 +9,7 @@ import { ISalesDetails } from 'src/app/Shared/Service/utils';
 export class SalesRepresentationComponent implements OnInit {
 
   sales: ISalesDetails
-  dropdownOptions: string[] = ['All Sales Reps', 'Year Wise Sales']
+  salesOptions: string[] = ['All Sales Reps', 'Year Wise Sales']
 
   private _salesDetails: ISalesDetails[];
   @Input('salesDetails')
@@ -25,7 +25,7 @@ export class SalesRepresentationComponent implements OnInit {
 
   onSelectionChange(event) {
     const selectedValue: string = event.target.value
-    const index = this.dropdownOptions.indexOf(selectedValue)
+    const index = this.salesOptions.indexOf(selectedValue)
     this.sales = this._salesDetails[index]
   }
 

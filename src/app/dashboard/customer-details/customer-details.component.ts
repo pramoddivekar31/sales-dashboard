@@ -1,4 +1,4 @@
-import { Component, OnInit,Input } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { columDefinitions, columHeaders } from 'src/app/Shared/Service/mock-data';
 import { ISalesData, ICustomer } from 'src/app/Shared/Service/utils';
 
